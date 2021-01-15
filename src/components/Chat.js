@@ -28,7 +28,10 @@ function Chat({id, username, timestamp, read, imageUrl, progilePic}) {
             <Avatar className="chat__avatar" src={progilePic} />
             <div className="chat__info">
                 <h4>{username}</h4>
-                <p>Tap to View - <TimeAgo date={new Date(timestamp?.toDate()).toUTCString()} /></p>
+                <p>
+                    {!read && 'Tap to View -'}{""} 
+                    <TimeAgo date={new Date(timestamp?.toDate()).toUTCString()} />
+                </p>
             </div>
             {!read && <StopRoundedIcon className="chat__readIcon" />}
         </div>
