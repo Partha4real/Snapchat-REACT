@@ -40,6 +40,7 @@ function WebcamCapture() {
             />
             <RadioButtonUncheckedIcon
                 className="webcamCapture__button"
+                fontSize='large'
                 onClick = {capture}
             />
             {/* <img src={image} alt="" /> */}

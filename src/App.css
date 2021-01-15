@@ -7,5 +7,33 @@
   height: 100vh;
 }
 
+.app__logo {
+  object-fit: contain;
+  height: 70px;
+  margin-top: -80px;
+  margin-bottom: 20px;
+}
+
+/* .app__body {
+  background: url("https://www.pngkey.com/png/full/859-8598072_picture-freeuse-library-silhouette-mobile-at-getdrawings-cell.png")
+    no-repeat;
+  background-size: contain;
+  height: 400px;
+  width: 250px;
+  padding: 74px;
+} */
+
+.app__body {
+  background-color: black;
+  height: 400px;
+  width: 250px;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.app__bodyBackground {
+  background-color: white;
+  height: 400px;
+}
 
 

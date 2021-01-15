@@ -8,7 +8,7 @@ import { useDispatch } from 'react-redux';
 import { db } from '../firebase';
 import { useHistory } from 'react-router-dom';
 
-function Chat({id, username, timestamp, read, imageUrl, progilePic}) {
+function Chat({id, username, timestamp, read, imageUrl, profilePic}) {
     const dispatch = useDispatch();
     const history = useHistory();
     const open = () => {
@@ -25,7 +25,7 @@ function Chat({id, username, timestamp, read, imageUrl, progilePic}) {
     }
     return (
         <div onClick={open} className="chat">
-            <Avatar className="chat__avatar" src={progilePic} />
+            <Avatar className="chat__avatar" src={profilePic} />
             <div className="chat__info">
                 <h4>{username}</h4>
                 <p>

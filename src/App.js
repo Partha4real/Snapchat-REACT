@@ -39,28 +39,33 @@ function App() {
         {!user ? (
           <Login />
         ) : (
-          <div className="app__body">
-            {/* A <Switch> looks through its children <Route>s and
-                renders the first one that matches the current URL. */}
-            <Switch>
-              <Route exact path="/">
-                <WebcamCapture />
-              </Route>
-              <Route exact path="/preview">
-                <Preview />
-              </Route>
-              <Route exact path="/chats">
-                <Chats />
-              </Route>
-              <Route exact path="/chats/view">
-                <ChatView />
-              </Route>
-            </Switch>
-          </div>
-        )}
-        
-      </Router>
-    </div>
+          <>
+            <img className="app__logo" src="https://variety.com/wp-content/uploads/2017/11/snapchat-logo.jpg" alt="" />
+            <div className="app__body">
+              <div className="app__bodyBackground">
+                 {/* A <Switch> looks through its children <Route>s and
+                  renders the first one that matches the current URL. */}
+                <Switch>
+                  <Route exact path="/">
+                    <WebcamCapture />
+                  </Route>
+                  <Route exact path="/preview">
+                    <Preview />
+                  </Route>
+                  <Route exact path="/chats">
+                    <Chats />
+                  </Route>
+                  <Route exact path="/chats/view">
+                    <ChatView />
+                  </Route>
+                </Switch>
+              </div>
+            </div>
+          </>
+          )}
+          
+        </Router>
+      </div>
   );
 }
 

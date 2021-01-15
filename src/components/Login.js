@@ -7,6 +7,7 @@ import './Login.css';
 
 function Login(props) {
     const dispatch = useDispatch();
+
     const signIn = () => {
         auth.signInWithPopup(provider)
         .then(result => {
