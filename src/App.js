@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import WebcamCapture from './components/WebcamCapture';
 import Preview from './components/Preview';
+import Chats from './components/Chats';
+import ChatView from './components/ChatView';
 
 function App() {
   return (
@@ -22,6 +24,12 @@ function App() {
           </Route>
           <Route exact path="/preview">
             <Preview />
+          </Route>
+          <Route exact path="/chats">
+            <Chats />
+          </Route>
+          <Route exact path="/chats/view">
+            <ChatView />
           </Route>
         </Switch>
       </div>
