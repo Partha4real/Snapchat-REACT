@@ -7,10 +7,11 @@ import {
   Link
 } from "react-router-dom";
 import WebcamCapture from './components/WebcamCapture';
+import Preview from './components/Preview';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
        <Router>
       <div className="app__body">
         {/* A <Switch> looks through its children <Route>s and
@@ -18,6 +19,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <WebcamCapture />
+          </Route>
+          <Route exact path="/preview">
+            <Preview />
           </Route>
         </Switch>
       </div>
